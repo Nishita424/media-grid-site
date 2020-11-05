@@ -302,6 +302,19 @@ h6 {
   grid-column: 2 / span 2;
 }
 
+/* Article  */
+/* Using flex for meta class: two items  */
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
 /* footer  */
 #main-footer {
   background: var(--dark-color);
