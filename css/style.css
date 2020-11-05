@@ -34,6 +34,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 /* #  To stretch the img over the width of its container */
 img {
   width: 100%;
@@ -114,7 +118,7 @@ h6 {
   background: #fff;
   padding: 1rem;
   border: #ccc solid 1px;
-  box-shadow: 2px 2px 10px #333,  -2px -2px 10px #333;
+  box-shadow: 2px 2px 10px #333, -2px -2px 10px #333;
 }
 
 /* Background Utility  */
@@ -143,9 +147,8 @@ h6 {
 .bg-secondary h2,
 .bg-secondary h3,
 .bg-secondary a {
-    color: #fff;
+  color: #fff;
 }
-
 
 /* Padding Utility */
 .py-1 {
@@ -165,6 +168,16 @@ h6 {
 }
 .p-3 {
   padding: 3rem;
+}
+
+/* List Utility  */
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+.list li a:hover {
+  color: var(--primary-color) !important;
 }
 
 /* Nav-bar  */
@@ -271,4 +284,40 @@ h6 {
 }
 #home-articles .articles-container > *:last-child {
   grid-column: 2 / span 2;
+}
+
+/* footer  */
+#main-footer {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+#main-footer .footer-container > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
 }
