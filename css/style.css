@@ -184,7 +184,7 @@ h6 {
   color: var(--primary-color) !important;
 }
 
- /* About page grid container  */
+/* About page grid container  */
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -192,8 +192,8 @@ h6 {
   grid-gap: 1.5rem;
 }
 .page-container > *:first-child {
-/* 3 is the no. of rows allowed in sidebar  */
-  grid-row: 1/span 3;
+  /* 3 is the no. of rows allowed in sidebar  */
+  grid-row: 1 / span 3;
 }
 
 /* Nav-bar  */
