@@ -184,7 +184,7 @@ h6 {
   color: var(--primary-color) !important;
 }
 
-/* About: Inner page grid container  */
+ /* About page grid container  */
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
