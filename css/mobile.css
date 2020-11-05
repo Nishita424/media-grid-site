@@ -1,0 +1,77 @@
+/* Tablets  */
+/* Nav-bar  */
+#main-nav .social {
+  display: none;
+}
+
+#main-nav .container {
+  grid-template-columns: 1fr;
+  grid-gap: 1.2rem;
+}
+#main-nav ul,
+#main-nav .logo {
+  justify-self: center;
+}
+#main-nav ul li a {
+  padding: 0.5rem;
+}
+
+/* grid-container: articles container => only two cols  */
+#home-articles .articles-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+/* Removing span on the immediate first and last child  */
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+
+/* Smartphones  */
+@media (max-width: 600px) {
+  /* Get the showcase content to the center  */
+  /* Stack grid home-articles  */
+
+  #show-case .showcase-container,
+  #home-articles .articles-container,
+  #main-footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+  /* Copyright div is spanned, so remove that span  */
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1;
+  }
+
+  /* #main-footer .footer-container > * {
+        border-bottom: #444 dotted 1px;
+        padding-bottom: 1rem;
+    }
+    
+    #main-footer .footer-container > *:nth-child(3),
+    #main-footer .footer-container > *:nth-child(4){
+        border: none;
+    } */
+  /* or  */
+  #main-footer .footer-container > *:first-child,
+  #main-footer .footer-container > *:nth-child(2) {
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+  }
+
+  /* About page  */
+  .page-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* Removing the span on first child  */
+  .page-container > *:first-child {
+    grid-row: 1;
+  }
+
+  .l-heading {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
